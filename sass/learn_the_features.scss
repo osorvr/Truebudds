@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Roboto&display=swap');
+
+
+
+
+// COLORS
+
+$primaryColor: white;
+$secondayColor: #e6d473;
+$backgroundcolor: rgb(10, 9, 9);
+$darkgrey: rgb(32, 32, 32);
+
+
+
+
+// FONTS
+
+$primaryFont: 'Bebas Neue', cursive;  
+$secondaFont: 'Bangers', cursive;
+$thirdFont: 'Roboto', sans-serif;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $backgroundcolor;
+}
+
+
+
+
+// ANCHOR BUTTON
+
+
+.ahr-btn {
+    color: $backgroundcolor;
+    font-family: $primaryFont;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    background-color: $secondayColor;
+    border: 0.2rem solid $secondayColor;
+}
+
+.ahr-btn:link {
+    text-decoration: none;
+}
+
+.ahr-btn:visited {
+    text-decoration: none;
+}
+
+.ahr-btn:hover {
+    border: 0.2rem solid $primaryColor;
+    background-color: $backgroundcolor;
+    color: $secondayColor;
+}
+
+.ahr-btn:active {
+    text-decoration: none;
+}
+
+
+
+// ANCHOR LINKS
+
+a {
+    color: $primaryColor;
+}
+
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  
+a:hover {
+    text-decoration: none;
+    color: $secondayColor;
+    cursor: pointer;
+}
+  
+a:active {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+// ---------------------------------------------------
+
+// MAIN BOX
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+.container {
+    border: 0.5rem solid $secondayColor;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}  
+  
+.maintnance {
+    color: $primaryColor;
+    font-family: $primaryFont;
+    font-size: 3rem;
+}
+  
+.back-home {
+    color: $primaryColor;
+    font-family: $thirdFont;
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Roboto&display=swap");
+body {
+  margin: 15%;
+}
+
+h1 {
+  color: #202020;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Bebas Neue", cursive;
+  color: #202020;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  font-family: "Roboto", sans-serif;
+}
+/*# sourceMappingURL=legal_links.css.map */

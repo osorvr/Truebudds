@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Roboto&display=swap');
+
+
+// COLORS
+
+$primaryColor: white;
+$secondayColor: #e6d473;
+$backgroundcolor: rgb(10, 9, 9);
+$darkgrey: rgb(32, 32, 32);
+
+// FONTS
+
+$primaryFont: 'Bebas Neue', cursive;  
+$secondaFont: 'Bangers', cursive;
+$thirdFont: 'Roboto', sans-serif;
+
+body {
+    margin: 15%;
+}
+
+h1 {
+    color: $darkgrey;
+    font-family: $primaryFont;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: $primaryFont;
+    color: $darkgrey;
+    font-weight: 500;
+}
+
+p {
+    font-family: $thirdFont;
+}
+
+li {
+    font-family: $thirdFont;
+}

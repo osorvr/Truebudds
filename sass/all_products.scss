@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Roboto&display=swap');
+
+
+// COLORS
+
+$primaryColor: white;
+$secondayColor: #e6d473;
+$backgroundcolor: #0a0909;
+$darkgrey: #202020;
+$blackcolor: black;
+
+// FONTS
+
+$primaryFont: 'Bebas Neue', cursive;  
+$secondaFont: 'Bangers', cursive;
+$thirdFont: 'Roboto', sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $backgroundcolor;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.a {
+  border-style: none;
+
+  img {
+    height: 5rem;
+  }
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 4rem;
+  border: 0.150rem solid $secondayColor;
+}
+
+a:link {
+  text-decoration: none;
+  color: $primaryColor;
+  font-family: $primaryFont;
+}
+
+a:visited {
+  text-decoration: none;
+  color: $primaryColor;
+  font-family: $primaryFont;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $primaryColor;
+}
+
+a:active {
+  text-decoration: none;
+  color: $primaryColor;
+  font-family: $primaryFont;
+}
+
+
+// BUTTONS
+
+.button {
+  border: 1px solid red;
+  background-color: $darkgrey;
+  border-style: none;
+  outline-style: none;
+  color: $primaryColor;
+  font-family: $primaryFont;
+  height: 100%;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: $secondayColor;
+  background-color: $blackcolor;
+  height: 100%;
+}
+
+.button:active, .button.is-checked {
+  height: 100%;
+  background-color: $secondayColor;
+  color: $blackcolor;
+}
+//
+
+
+// BACK TO TOP 
+
+.mybtn {
+    background-color: $blackcolor;
+    display: none;
+    border-style: none;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    outline: none;
+    color: $secondayColor;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    border: 0.2rem solid $secondayColor;
+  }
+  
+  .mybtn:hover {
+    border: 0.2rem solid $primaryColor;
+  }
+
+// BRANDS
+
+.brands {
+  color: $secondayColor;
+  text-align: start;
+  font-family: $primaryFont;
+  font-size: 3rem;
+  max-width: 80%;
+  margin: auto;
+}
+
+
+// FILTER BRAND
+
+.filter-brand {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+
+  ul {
+    color: $primaryColor;
+    display: flex;
+    flex-flow: row wrap;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  // FILTER FEATURES
+
+  .filter-features {
+    background-color: $darkgrey;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+  }  
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+//
+
+// OnClik BUTTON
+
+.dropbtn {
+  list-style: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: 70%;
+  z-index: 5;
+}
+//
+
+// DROPUP FOR SORT BY
+
+.sort-form {
+  position: relative;
+  background-color: $blackcolor;
+  appearance: none;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 10%;
+  height: 5.2rem;
+  border-style: none;
+  list-style: none;
+  outline-style: none;
+  color: $primaryColor;
+  font-family: $primaryFont;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 1.05rem;
+  text-align-last: center;
+  cursor: pointer;
+  z-index: 8;
+}
+
+
+.sort-form:hover {
+  color: $secondayColor;
+}
+
+option {
+  color: $primaryColor;
+}
+
+.sort-by {
+  display: none;
+}
+
+option:hover {
+  color: $secondayColor
+}
+//
+
+
+.price-change {
+  margin: auto;
+  width: 85%;
+  color: $primaryColor;
+  font-family: $primaryFont;
+}
+
+
+// GRID
+
+.grid {
+  margin: auto;
+  width: 90%;
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  border-top: 0.1rem solid $primaryColor;
+}  
+  
+// ELEMENT ITEMS
+
+.element-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 47%;
+  margin: 0.5rem;
+}
+
+  // ELEMENT PRODUCT
+
+  .element-block-1 {
+    flex-basis: 45%;
+    flex-grow: 1;
+
+    img {
+      width: 100% !important;
+      max-width: 1500px !important;
+      height: auto !important;
+    }
+  }
+
+  // ELEMENT PRODUCT 2
+  
+  .element-block-2 {
+    border-radius: 0.5rem;
+    background-color: $blackcolor;
+    padding: 1.5rem;
+    flex-basis: 45%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+  }  
+
+  // COLUMN 1
+
+  .prod-col {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 1.5rem;
+        
+    .prod-name {
+      color: #e6d473;
+      font-family: $primaryFont;
+      text-align: start;
+      flex-grow: 2;
+    }
+        
+    .prod-price {
+      color: $primaryColor;
+      font-family: $primaryFont;
+    }
+        
+    .prod-price {
+      font-family: $primaryFont;
+      color: $primaryColor;
+      text-align: end;
+    }
+  }
+
+  // COLUMN 2
+
+  .prod-col-2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: $primaryColor;
+    font-family: $thirdFont;
+    font-size: 0.7rem;
+  }
+
+  // COLUMN 3
+        
+  .prod-col-3 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+    color: $primaryColor;
+    font-family: $thirdFont;
+    font-size: 0.7rem;
+         
+    span {
+      background-color: $darkgrey;
+      border-radius: 5rem;
+      padding: 0.3rem;
+      font-size: 0.5rem;
+    }
+  }
+
+  // COLUMN 4
+        
+  .prod-col-4 {
+    display: flex;
+    flex-flow: row wrap;
+    color: $primaryColor;
+    font-family: $thirdFont;
+
+    .prod-specs {
+      font-size: 0.7rem;
+    }
+  }
+
+  // COLUMN 5
+        
+  .prod-col-5 {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: $thirdFont;
+    color: $primaryColor;
+    margin-top: 0.7rem;
+    font-weight: 500;
+    font-size: 1rem;
+    gap: 0.5rem;
+        
+    span {
+      color: gray;
+    }
+        
+    .prod-specs-2 {
+      color: $primaryColor;
+      border-bottom: 0.1rem solid $secondayColor;
+    }
+  }
+
+  // COLUMN 6
+        
+  .prod-col-6 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: $primaryColor;
+    font-family: $thirdFont;
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+    gap: 0.5rem;
+        
+    button {
+      border: 0.150rem solid $secondayColor;
+      background-color: $blackcolor;
+      color: $secondayColor;
+      width: 5rem;
+      height: 2rem;
+    }
+
+    button:hover {
+      border: 0.150rem solid $primaryColor;
+    }
+  }
+  
+
+@media (max-width: 580px) {
+ // GRID
+
+.grid {
+  margin: auto;
+  width: 90%;
+  box-sizing: border-box;
+  margin-bottom: 15%;
+  border-top: 0.1rem solid $primaryColor;
+}  
+  
+// ELEMENT ITEMS
+
+.element-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  max-width: 100%;
+  margin: 0.5rem;
+}
+
+  // ELEMENT PRODUCT
+
+  .element-block-1 {
+    max-width: 45%;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // ELEMENT PRODUCT 2
+  
+  .element-block-2 {
+    border-radius: 0.5rem;
+    background-color: $blackcolor;
+    padding: 1.5rem;
+    min-width: 45%;
+  }   
+}
+
+

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0a0909;
+}
+
+.ahr-btn {
+  color: #0a0909;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  background-color: #e6d473;
+  border: 0.2rem solid #e6d473;
+}
+
+.ahr-btn:link {
+  text-decoration: none;
+}
+
+.ahr-btn:visited {
+  text-decoration: none;
+}
+
+.ahr-btn:hover {
+  border: 0.2rem solid white;
+  background-color: #0a0909;
+  color: #e6d473;
+}
+
+.ahr-btn:active {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #e6d473;
+  cursor: pointer;
+}
+
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.container {
+  border: 0.5rem solid #e6d473;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.maintnance {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+}
+
+.back-home {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+/*# sourceMappingURL=learn_the_features.css.map */
